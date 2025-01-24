@@ -1,0 +1,543 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AGC - Expert CAD and CAE services for national and international clients.">
+    <meta name="keywords" content="CAD, CAE, mechanical design, 3D modeling, simulation, prototyping">
+    <meta name="author" content="ACA Innovators">
+    <title>ACA Innovators | Let's Innovate</title>
+    <link rel="icon" href="icon.png" type="image/png">
+
+    <style>
+        .title-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .title-section img {
+            width: 50px; /* Adjust size as needed */
+            height: auto;
+            margin-right: 10px;
+        }
+        .title-section h1 {
+            font-size: 24px;
+            margin: 0;
+            color: #333;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #0088aa;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin: 0;
+            position: relative;
+            z-index: 1;
+        }
+        header p {
+            font-size: 1.5rem;
+            margin: 10px 0 0;
+            position: relative;
+            z-index: 1;
+        }
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('background.jpg') no-repeat center center/cover;
+            opacity: 0.5;
+            z-index: 0;
+        }
+        .logo {
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            margin-right: auto;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            background: #96db31;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            font-size: 0.9rem;
+        }
+        nav a:hover {
+            background: #30db31;
+            border-radius: 5px;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+            padding: 0;
+        }
+        section {
+            padding: 100px 20px;
+            text-align: center;
+            color: white;
+            margin-bottom: 0;
+        }
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+        .contact-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .contact-form {
+            background: white;
+            border: 2px solid #ddd;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #0044cc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #0055dd;
+        }
+        .scroll-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 10px;
+            scroll-behavior: smooth;
+        }
+        .scroll-container::-webkit-scrollbar {
+            height: 8px;
+        }
+        .scroll-container::-webkit-scrollbar-thumb {
+            background: #0044cc;
+            border-radius: 10px;
+        }
+        .scroll-container::-webkit-scrollbar-track {
+            background: #ddd;
+        }
+        .card-home {
+            background: white;
+            border: 2px solid #ddd;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 750px;
+            margin: auto;
+        }
+        .card {
+            flex: 0 0 auto;
+            background: white;
+            border: 2px solid #ddd;
+            border-radius: 15px;
+            padding: 20px;
+            width: 450px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .whatsapp-popup {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+        }
+        .whatsapp-popup img {
+            width: 40px;
+            height: 40px;
+        }
+        .whatsapp-popup:hover {
+            background-color: #20b358; /* Slightly darker green */
+        }
+        footer {
+            background-color: #96db31;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        #Home {
+            background-color: #DCD0E8;
+        }
+        #AboutUs {
+            background-color: #000000;
+        }
+        #Services {
+            background-color: #F8F8F8;
+        }
+        #Portfolio {
+            background-color: #D3D3D3;
+        }
+        #Testimonials {
+            background-color: #F2F2E8;
+        }
+        #Contact {
+            background-color: #D8BFD8;
+        }
+        #Location {
+            background-color:  #E0F2F7;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- WhatsApp Pop-up -->
+    <a href="https://wa.me/+919871137235?text=Hi, I would like to know more about your services!" 
+       target="_blank" 
+       class="whatsapp-popup">
+        <img src="E:\ACAInnovators\ACAI Website\WhatsAppBusinessIcon.jpg" alt="WhatsApp">
+    </a>
+
+    <!-- Page Content -->
+    <header>
+        <img src="E:\ACAInnovators\ACAI Website\Logo.jpg" alt="Logo" width="100" height="auto"><h1 style="font-size: 4rem; font-weight: bold;">ACA Innovators</h1>
+        <p>CAD-CAM-CAE Services for your Requirements / Your Trusted Partner in Mechanical Design</p>
+    </header>
+
+    <nav>
+        <a href="#" class="active">Home</a>
+        <a href="#AboutUs">AboutUs</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+        <a href="#location">Location</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- Home Section -->
+        <section id="Home">
+            <div class="scroll-container">
+                <div class="card-home">
+		    <h3 style="font-weight: 900; line-height: 0.75;">CUTTING EDGE SOLUTIONS</h3>
+          	    <h3 style="font-weight: 900; line-height: 0.75">FOR YOUR</h3>
+          	    <h3 style="font-weight: 900; line-height: 0.75">MECHANICAL ENGINEERING</h3>
+          	    <h3 style="font-weight: 900; line-height: 0.75">NEEDS</h3>
+		    	<iframe width="750" height="450" src="E:\ACAInnovators\ACAI Website\HomeVideo.mp4" title="Video 2" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		    </video>
+                    <p>.......</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- AboutUs Section -->
+        <section id="AboutUs">
+            <h2>About Us</h2>
+            <div class="scroll-container">
+
+                <div class="card">
+          	    <h3>Committed to Excellence and Integrity</h3>
+		    <iframe width="100%" height="500" src="https://www.youtube.com/embed/9bZkp7q19f0" title="Video 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>At AGC, we are driven by a steadfast commitment to excellence, integrity, and quality in all that we do. Our mission is to deliver exceptional CAD-CAM-CAE solutions that exceed client expectations while adhering to the highest ethical standards. Whether it’s the precision of our designs or the clarity of our communication, every aspect of our work reflects our dedication to building trust and delivering value to our clients and stakeholders.</p>
+                </div>
+
+		<div class="card">
+                    <h3>Global Reach, Tailored Expertise</h3>
+                    <iframe width="100%" height="500" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>With a strong presence in India and Europe, AGC provides cutting-edge design and engineering solutions across diverse industries, including automation, medical devices, consumer products, and manufacturing. Our global reach is supported by an understanding of regional needs, enabling us to offer tailored solutions that resonate with the challenges and goals of our clients.</p>
+                </div>
+
+		<div class="card">
+                    <h3>Data Security You Can Rely On</h3>
+                    <img src="E:\ACAInnovators\ACAI Website\AboutUsPic3.jpg" alt="Data Security You Can Rely On" width="450" height="500">
+                    <p>Confidentiality and data security are at the core of our operations. We understand the critical importance of safeguarding proprietary information and intellectual property. To ensure absolute protection of our clients' data, we actively enter into Non-Disclosure Agreements (NDAs) and Confidentiality Agreements as required. This rigorous approach guarantees that all shared information remains secure and confidential throughout the project lifecycle.</p>
+                </div>
+
+		<div class="card">
+                    <h3>Cutting-Edge Solutions, Powered by Innovation</h3>
+                    <img src="E:\ACAInnovators\ACAI Website\AboutUsPic4.jpg" alt="Cutting-Edge Solutions, Powered by Innovation" width="450" height="500">
+                    <p>At AGC, our expertise in CAD-CAM-CAE is backed by state-of-the-art tools such as SolidWorks, CATIA, AutoCAD, and ANSYS. We specialize in providing solutions that span 3D modeling, 2D drafting, simulation, product design, prototyping, and manufacturing support. By combining technical excellence with innovative problem-solving, we address complex design and engineering challenges with efficiency and precision.</p>
+                </div>
+
+		<div class="card">
+                    <h3>Building Relationships Through Quality and Collaboration</h3>
+                    <h3>Our Vision for Success</h3>
+                    <iframe width="100%" height="500" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>AGC’s journey is defined by an unwavering commitment to empowering businesses with superior mechanical engineering solutions. We aim to build long-lasting relationships founded on trust, collaboration, and mutual success. Every project we undertake reflects our dedication to quality, innovation, and delivering value, ensuring that our clients achieve their engineering and design goals with confidence.</p>
+                </div>
+
+		<div class="card">
+                    <h3>Multi Lingual Support</h3>
+                    <iframe width="100%" height="500" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>At AGC, we believe in seamless communication with our clients. To better serve our diverse clientele, we offer business support in English, Hindi, and German. Whether you're in India, Europe, or beyond, our team ensures clear and efficient collaboration across languages.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2>Our Services</h2>
+	    <p>At ACA Innovators, we pride ourselves on delivering cutting-edge mechanical engineering solutions tailored to your unique needs. Our services span a broad range of expertise, from CAD modeling to advanced analysis and rapid prototyping, ensuring comprehensive support for every stage of your product development journey.</p>
+            <div class="scroll-container">
+                <div class="card">
+                    <h3>CAD Conversions</h3>
+                    <p>Simplify design updates and transitions with our reliable CAD conversion services.</p>
+                    <p>Our CAD Conversion Services</p>
+                    <p>Image to CAD Conversion: Transforming images into detailed CAD models.</p>
+                    <p>Paper to CAD Conversion: Digitizing paper drawings into precise CAD files.</p>
+                    <p>PDF to CAD Conversion: Converting PDF files into editable CAD designs.</p>
+                    <p>CAD to CAD Conversion: Adapting files between different CAD formats.</p>
+                    <img src="E:\ACAInnovators\ACAI Website\CadConversion1.jpg" alt="Cutting-Edge Solutions, Powered by Innovation" width="250" height="auto">
+
+                </div>
+
+                <div class="card">
+                    <h3>Concept Design</h3>
+                    <p>We craft innovative concept designs to help you visualize and refine your ideas before development.</p>
+                    <p>Our Concept Design Services:</p>
+                    <p>Conceptual Designs: Initial sketches and models capturing the essence of your idea.</p>
+                    <p>Sheet Metal Enclosure Product Designs: Specialized designs for sheet metal enclosures.</p>
+                </div>
+
+                <div class="card">
+                    <h3>CAD Modeling</h3>
+                    <p>We specialize in creating detailed and accurate CAD models tailored to your project requirements. Our expertise spans across various modeling techniques, ensuring robust designs ready for manufacturing or further analysis.</p>
+                    <p>Our Mechanical CAD modeling Services:</p>
+                    <p>Casting Modeling: Designing models for casting processes, ensuring precision and manufacturability.</p>
+                    <p> Solid Modeling: Crafting 3D solid structures for functional and structural integrity.</p>
+                    <p>Surface Modeling: Developing intricate and aesthetically appealing surfaces.</p>
+                    <p>Assembly Modeling: Creating complete assemblies with precise component interactions.</p>
+                    <p>Sheet Metal Modeling: Designing components optimized for sheet metal fabrication.</p>
+                    <p>Bill of Materials (BOM): Providing detailed material and component lists for production.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Prototype Design and Engineering</h3>
+                    <p>We transform ideas into tangible prototypes, bridging the gap between concept and production.</p>
+                    <p>Our Prototype Design & Engineering Services:</p>
+                    <p>Proof-of-Concept Prototype: Initial models to validate feasibility and design.</p>
+                    <p>Functional Prototype: Working prototypes to test functionality and performance.</p>
+                    <p>Visual Prototype: High-quality models for showcasing design aesthetics.</p>
+                </div>
+
+                <div class="card">
+                    <h3>3D Product Animation</h3>
+                    <p>Bring your designs to life with our professional 3D animations, tailored for technical and industrial applications.</p>
+                    <p>Our 3D Product Animation Services:</p>
+                    <p>Basic 3D Animation: Simple animations to showcase product features.</p>
+                    <p>Technical Animation: Detailed animations explaining complex technical concepts.</p>
+                    <p>Industrial Animation: Visualizations for industrial applications and p</p>
+                    <p>Hyper-realistic Animations: Lifelike animations for impactful presentations.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Rapid Prototyping</h3>
+                    <p>Accelerate your product development with our advanced prototyping services, ensuring speed and accuracy.</p>
+                    <p>Our Rapid Prototyping Services:</p>
+                    <p>CNC Prototyping: High-precision prototypes using CNC machining.</p>
+                    <p>3D Printing Prototyping: Fast and versatile 3D-printed prototypes.</p>
+                    <p>Sheet Metal Prototyping: Prototypes crafted from sheet metal for functional testing.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Finite Element Analysis</h3>
+                    <p>Our FEA services help predict how your designs will respond to real-world conditions, enabling informed engineering decisions.</p>
+                    <p>Our FEA Services:</p>
+                    <p>Stress / Structural Analysis: Evaluating stress distribution and structural strength.</p>
+                    <p>Static Analysis: Assessing performance under static loads.</p>
+                    <p>Linear Analysis: Simulating linear material behavior and responses.</p>
+                    <p>Dynamic Analysis: Studying the effects of time-dependent forces on designs.</p>
+                    <p>Thermal Analysis: Evaluating thermal behavior and heat distribution.</p>
+                    <p>CFD (Computational Fluid Dynamics) Analysis: Simulating fluid flow and related phenomena.</p>
+                    <p>Design Optimization: Refining designs for performance and cost efficiency.</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <h2>Our Portfolio</h2>
+            <div class="scroll-container">
+                <div class="card">
+                    <h3>Project 1</h3>
+                    <p>TEXT Medical device design and simulation for precision tools.</p>
+                    <img src="E:\ACAInnovators\ACAI Website\Project 1.jpg" alt="Description of the image" width="400" height="auto">
+                </div>
+                <div class="card">
+                    <h3>Project 2</h3>
+                    <p>TEXT Structural integrity analysis for a consumer electronics product.</p>
+                    <img src="E:\ACAInnovators\ACAI Website\Project 2.jpg" alt="Description of the image" width="400" height="auto">
+                </div>
+                <div class="card">
+                    <h3>Project 3</h3>
+                    <p>TEXT Thermal analysis and optimization for an automation component.</p>
+                    <img src="E:\ACAInnovators\ACAI Website\Project 3.jpg" alt="Description of the image" width="400" height="auto">
+                </div>
+                <div class="card">
+                    <h3>Project 4</h3>
+                    <p>TEXT Thermal analysis and optimization for an automation component.</p>
+                    <img src="E:\ACAInnovators\ACAI Website\Project 4.jpg" alt="Description of the image" width="400" height="auto">
+                </div>
+                <div class="card">
+                    <h3>Project 5</h3>
+                    <p>TEXT Thermal analysis and optimization for an automation component.</p>
+                    <img src="E:\ACAInnovators\ACAI Website\Project 5.jpg" alt="Description of the image" width="400" height="auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials">
+            <h2>What Our Clients Say</h2>
+            <div class="scroll-container">
+                <div class="card">
+                    <p>"AGC provided exceptional design services. Their expertise helped us bring our product to market faster."</p>
+                    <p><strong>- Client A</strong> <img src="E:\ACAInnovators\ACAI Website\Client1.jpg"  alt="Client A Photo" width="200" height="auto"> </p>
+                </div>
+                <div class="card">
+                    <p>"The simulations were incredibly accurate, saving us significant costs on prototyping."</p>
+                    <p><strong>- Client B</strong> <img src="E:\ACAInnovators\ACAI Website\Client2.jpg"  alt="Client B Photo" width="200" height="auto"> </p>
+                </div>
+                <div class="card">
+                    <p>"Professional, reliable, and innovative. Highly recommended!"</p>
+                    <p><strong>- Client C</strong> <img src="E:\ACAInnovators\ACAI Website\Client3.jpg"  alt="Client C Photo" width="200" height="auto"> </p>
+                </div>
+                <div class="card">
+                    <p>"Professional, reliable, and innovative. Highly recommended!"</p>
+                    <p><strong>- Client C</strong> <img src="E:\ACAInnovators\ACAI Website\Client4.jpg"  alt="Client D Photo" width="200" height="auto"> </p>
+                </div>
+                <div class="card">
+                    <p>"Professional, reliable, and innovative. Highly recommended!"</p>
+                    <p><strong>- Client C</strong> <img src="E:\ACAInnovators\ACAI Website\Client4.jpg"  alt="Client E Photo" width="200" height="auto"> </p>
+                </div>
+            </div>
+        </section>
+
+	<!-- Contact Form -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact">
+                <div class="contact-form">
+                    <form action="#" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="organisation">Organisation (If any):</label>
+                        <input type="organisation" id="organisation" name="organisation" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="phone">Phone:</label>
+                        <input type="phone" id="phone" name="phone" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+	    </div>
+	</section>
+
+        <!-- Office Location -->
+	<section id="location">
+		<h2>Our Office Location</h2>
+		<div class="scroll-container">
+		    <div class="card">
+			<h2>Office Location 1</h2>	
+                    	<p><strong>Address:</strong></p>
+                    	<p>ACA Innovators</p>
+                    	<p>A-57, DDA Sheds</p>
+                    	<p>Ma Anandmayee Marg, Okhla Phase 2</p>
+                    	<p>Okhla Industrial Area, New Delhi, India </p>
+                    	<p>Pin: 110020</p>
+		   
+                    	<p><strong>Phone:</strong></p>
+                    	<p>+91-9871137235</p>
+                    	<p>+91-9717401101</p>
+
+                    	<p><strong>Email:</strong></p>
+                    	<p>aditya@acainnovators.in</p>
+                    </div>
+
+		    <div class="card">
+		    	<h2>Office Location 2</h2>	
+                    	<p><strong>Address:</strong></p>
+                    	<p>ACA Innovators</p>
+                    	<p>A-57, DDA Sheds</p>
+                    	<p>Ma Anandmayee Marg, Okhla Phase 2</p>
+                    	<p>Okhla Industrial Area, New Delhi, India </p>
+                    	<p>Pin: 110020</p>
+
+                    	<p><strong>Phone:</strong></p>
+                    	<p>+91-9871137235</p>
+                    	<p>+91-9717401101</p>
+
+                    	<p><strong>Email:</strong></p>
+                    	<p>aditya@acainnovators.in</p>
+		    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AGC. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Add active class to the current navigation link based on scroll
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('nav a');
+
+            window.addEventListener('scroll', () => {
+                let fromTop = window.scrollY + 10;
+
+                navLinks.forEach(link => {
+                    const section = document.querySelector(link.getAttribute('href'));
+
+                    if (section && section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+                        navLinks.forEach(link => link.classList.remove('active'));
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
